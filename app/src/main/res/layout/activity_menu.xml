@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/calendario_menu"
+        android:layout_width="91dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Fecha"
+        app:backgroundTint="#2CC632"
+        app:layout_constraintStart_toEndOf="@+id/add_menu"
+        app:layout_constraintTop_toBottomOf="@+id/listado_menu" />
+
+    <TextView
+        android:id="@+id/label2_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:scrollbarSize="4dp"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1_menu" />
+
+    <ListView
+        android:id="@+id/listado_menu"
+        android:layout_width="411dp"
+        android:layout_height="371dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label2_menu"
+        app:layout_constraintVertical_bias="0.1">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/label1_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/nunito_bold"
+        android:scrollbarSize="4dp"
+        android:text="Bienvenido,"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_menu"
+        android:layout_width="67dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        android:textSize="34sp"
+        app:backgroundTint="#2CC632"
+        app:layout_constraintStart_toEndOf="@+id/usuario_menu"
+        app:layout_constraintTop_toBottomOf="@+id/listado_menu" />
+
+    <Button
+        android:id="@+id/usuario_menu"
+        android:layout_width="91dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Perfil"
+        app:backgroundTint="#2CC632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listado_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
